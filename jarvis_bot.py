@@ -33,31 +33,27 @@ def count():
 
 def test():
     print("Let's test your programming knowledge.")
-    # write your code here
-    print("What do we use to define a block of code in Python language?")
-    options = []
-    option_1 = "1. Key"
-    option_2 = "2. Brackets"
-    option_3 = "3. Indentations"
-    option_4 = "4. None"
-    print("option_1")
-    print("option_2")
-    print("option_3")
-    print("option_4")
-    answer = input()
-    if answer == "option_3":
-        print("Completed, have a nice day!")
-    else:
-        print("Please, try again.")
-    
-    print('Completed, have a nice day!')
+    print("""
+    Why do we use methods?
+    1. To repeat a statement multiple times.
+    2. To decompose a program into several small subroutines.
+    3. To determine the execution time of a program.
+    4. To interrupt the execution of a program.
+    """)
+    while True:
+        answer = int(input())
+        if answer == 2:
+        # write your code here
+            print('Completed, have a nice day!')
+            break
+        else:
+            print('Please, try again.')
 
 
 def end():
     print('Congratulations, have a nice day!')
 
-
-greet('Aid', '2020')  # change it as you need
+greet('Jarvis', '2021')  # change it as you need
 remind_name()
 guess_age()
 count()
